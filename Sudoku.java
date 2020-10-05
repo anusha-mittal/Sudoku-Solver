@@ -2,9 +2,7 @@
 Java to solve Sudoku problem */
 class Sudoku 
 { 
-public static boolean isSafe(int[][] board, 
-							int row, int col, 
-							int num) 
+public static boolean isSafe(int[][] board, int row, int col, int num) 
 { 
 	// row has the unique (row-clash) 
 	for (int d = 0; d < board.length; d++) 
@@ -145,7 +143,7 @@ public static void main(String args[])
 
 	if (solveSudoku(board, N)) 
 	{ 
-		print(board, N); // print solution 
+		print(board, N); // print solution i.e. board 
 	} 
 	else
 	{ 
